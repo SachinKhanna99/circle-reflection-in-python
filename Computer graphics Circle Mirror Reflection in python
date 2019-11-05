@@ -1,0 +1,109 @@
+import turtle
+turtle.Turtle()
+
+def circle(x,y,r):
+    c=1-r
+    for i in range (x,y):
+        if(c<0):
+            c=c+2*i+3
+            
+            turtle.penup()
+            turtle.goto(i,y)
+            turtle.pendown()
+
+            turtle.goto(i+1,y+1)
+            turtle.penup()
+            turtle.goto(-i,y)
+            turtle.pendown()
+
+            turtle.goto(-i-1,y+1)
+            turtle.penup()
+            turtle.goto(i,-y)
+            turtle.pendown()
+
+            turtle.goto(i+1,-y-1)
+            turtle.penup()
+            turtle.goto(-i,-y)
+            turtle.pendown()
+
+            turtle.goto(-i-1,-y-1)
+            turtle.penup()
+            turtle.goto(y,i)
+            turtle.pendown()
+
+            
+
+            turtle.goto(y+1,i+1)
+            turtle.penup()
+            turtle.goto(-y,i)
+            turtle.pendown()
+
+            turtle.goto(-y-1,i+1)
+            turtle.penup()
+            turtle.goto(y,-i)
+            turtle.pendown()
+
+            turtle.goto(y+1,-i-1)
+            turtle.penup()
+            turtle.goto(-y,-i)
+            turtle.pendown()
+
+            turtle.goto(-y-1,-i-1)
+            turtle.pendown()
+
+        else:
+            c=c+2*(x-y)+5
+            y=y-1
+
+            turtle.penup()
+            turtle.goto(i,y)
+            turtle.pendown()
+
+            turtle.goto(i+1,y+1)
+            turtle.penup()
+            turtle.goto(-i,y)
+            turtle.pendown()
+
+            turtle.goto(-i-1,y+1)
+            turtle.penup()
+            turtle.goto(i,-y)
+            turtle.pendown()
+
+            turtle.goto(i+1,-y-1)
+            turtle.penup()
+            turtle.goto(-i,-y)
+            turtle.pendown()
+
+            turtle.goto(-i-1,-y-1)
+            turtle.penup()
+            turtle.goto(y,i)
+            turtle.pendown()
+
+            
+
+            turtle.goto(y+1,i+1)
+            turtle.penup()
+            turtle.goto(-y,i)
+            turtle.pendown()
+
+            turtle.goto(-y-1,i+1)
+            turtle.penup()
+            turtle.goto(y,-i)
+            turtle.pendown()
+
+            turtle.goto(y+1,-i-1)
+            turtle.penup()
+            turtle.goto(-y,-i)
+            turtle.pendown()
+
+            turtle.goto(-y-1,-i-1)
+            turtle.pendown()
+
+        if(i==y):
+            break;
+
+
+circle(0,60,60)
+            
+
+          
